@@ -1,0 +1,36 @@
+package slider;
+
+import java.awt.GridLayout;
+
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.imageio.*;
+
+
+
+public class parent 
+{
+//	tilegrid();
+	
+
+public int x;
+public int y;
+public int speed;
+
+	 
+	    public static void main(String[] args) 
+	    {
+	        JFrame.setDefaultLookAndFeelDecorated(true);
+	        JFrame frame = new JFrame("slider");
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	         
+	        JPanel panel = new JPanel();       // Set the panel to add buttons    
+	        JSlider slider = new JSlider();//new slider
+	        panel.add(slider); // Add the slider to the panel    
+	        frame.add(panel);// adding panel to frame
+	        frame.pack();//set sizes
+	        frame.setVisible(true);
+	    }
+	
+}
